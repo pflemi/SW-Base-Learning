@@ -1,0 +1,196 @@
+** start of undefined **
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+    <title>Swipe Shoppers Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title" >Swipe: Shoppers Survey</h1>
+    <p id="description" >Thank you for your feedback!</p>
+    <form id="survey-form" method="post">
+       <fieldset>
+        <label  id="name-label"  >Enter Your First Name: <input id="name" name="name" type="text" required placeholder="ie. John" /></label>
+        <label  id="number-label">Enter Your Phone Number: <input min="10" max="10" id="number" name="number" type="number" required placeholder="(123)456-7890" /></label>
+        <label  id="email-label"  >Enter Your Email: <input id="email" name="email" type="email" required placeholder="JohnSmith@gmail.com" /></label>
+       </fieldset>
+       <fieldset>
+        <legend required>How often do you shop?</legend>
+        <label for="Monthly"><input id="Monthly" type="radio" value="1" name="frequency" class="inline" checked /> Monthly</label>
+        <label for="weekly"><input id="weekly" type="radio"  value="2"  name="frequency" class="inline" checked /> Weekly</label>
+        <label for="Every Now and Then"><input id="Every Now and Then" type="radio"  value="3"  name="frequency" class="inline" /> Every Now and Then</label>
+        <label for="Too Much"><input id="Too Much" type="radio"  value="4"  name="frequency" class="inline" checked /> Too Much</label>
+      </fieldset>
+      <fieldset>
+        <legend required for="need" >What do you most look for?</legend>
+       <select id="dropdown" name="need" > 
+         <option value="">(select one)</option>
+         <option value="1">Low Prices</option>
+         <option value="2">Quality Items</option>
+         <option value="3">Rare Finds</option>
+         <option value="4">Great Service</option>
+         </select>
+        </fieldset>
+
+         <fieldset>
+        <legend required for="why" type="checkbox" >What draws you in?</legend>
+      
+         <input id="checkbox" type="checkbox" value="1">Sales</input>
+         <input id="checkbox" type="checkbox" value="2">Emails</input>
+         <input id="checkbox" type="checkbox" value="3">Texts</input>
+         <input id="checkbox" type="checkbox" value="4">Flyers</input>
+         <input id="checkbox" type="checkbox" value="5">Radio</input> 
+         <input id="checkbox" type="checkbox" value="6">Ads
+         </input>
+        </fieldset>
+
+         <fieldset>
+            <label for="favorite">Describe your favorite place to shop:
+          <textarea id="favorite" name="favorite" rows="3" cols="30" placeholder="Enter your suggestion here.."></textarea>
+        </label>
+      </fieldset>
+       <input id="submit" type="submit" value="Submit" />
+    </form>
+
+  </body>
+  
+</html>
+ 
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Garamond';
+}
+
+
+body {
+    background: linear-gradient(to bottom, #ffe4e1, #ffc1c1);
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+
+#survey-form {
+    background-color: #ff9999;
+    border-radius: 10px;
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-align: left;
+}
+
+
+#title {
+    font-size: 2em;
+    text-align: top;
+    margin-bottom: 10px;
+    
+    color: #fff;
+    font-family: 'Garamond', 'serif';
+}
+
+#description {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #fff;
+    font-family: Serendipity;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #ffe6e6;
+    color: #333;
+    font-size: 1em;
+}
+
+
+input[type="number"],
+textarea,
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #ffe6e6;
+    color: #333;
+    font-size: 1em;
+}
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+    color: #999;
+}
+
+textarea {
+    resize: none;
+}
+
+
+input[type="submit"] {
+    background-color: #ff6666;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"]:hover {
+    background-color: #e65555;
+}
+
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+
+.inline {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 1em;
+}
+
+
+** end of undefined **
+
